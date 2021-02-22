@@ -1,24 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar'
+import Home from './Home'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Game from './Game';
+import Rate from './Rate';
+import AddGame from './AddGame';
+
+//let access_token = ''
 
 function App() {
+  /*let response = null
+  fetch('https://id.twitch.tv/oauth2/token?client_id=z3tf2rhmcos3pib2uep4ppvnkx4ssh&client_secret=z4c03ctbdmi8u8jdgh31ppzuuyu361&grant_type=client_credentials', {
+    method: 'POST'
+  }).then(response => {
+    let responseJSON = response
+    console.log(responseJSON)
+  })*/
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar/>
+        <div className='content'>
+          <Switch>
+            <Route exact path='/'>
+              <Home/>
+            </Route>
+            <Route path='/game/:id'>
+              <Game/>
+            </Route>
+            <Route path='/rate/:id'>
+              <Rate/>
+            </Route>
+            <Route path='/add'>
+              <AddGame/>
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 

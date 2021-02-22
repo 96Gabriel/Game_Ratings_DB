@@ -1,0 +1,32 @@
+{
+  "games": [
+    {
+      "name": "Spider-Man Miles Morales",
+      "ratingCritics": 88,
+      "ratingPublic": 83,
+      "gameCover": "https://static.metacritic.com/images/products/games/9/b98a1d69c467b0ad796ded383599eb72-98.jpg",
+      "id": 1
+    },
+    {
+      "name": "Cyberpunk 2077",
+      "ratingCritics": 76,
+      "ratingPublic": 82,
+      "gameCover": "https://static.metacritic.com/images/products/games/9/b05b3823508c28c8f8646e8bcc605b3e-98.jpg",
+      "id": 2
+    },
+    {
+      "name": "Hyrule Warriors: Age of Calamity",
+      "ratingCritics": 80,
+      "ratingPublic": 79,
+      "gameCover": "https://static.metacritic.com/images/products/games/4/f7f4eaa2b20b40171c034f1e4be1d22b-98.jpg",
+      "id": 3
+    },
+    {
+      "name": "Hitman 3",
+      "ratingCritics": 87,
+      "ratingPublic": 72,
+      "gameCover": "https://static.metacritic.com/images/products/games/4/bb6cf986666fb3330e5ce6e40322efc1-98.jpg",
+      "id": "4"
+    }
+  ]
+}

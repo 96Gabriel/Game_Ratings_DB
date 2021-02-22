@@ -7,7 +7,110 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Navbar Styling*/
+
+#navbarList{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+#navbarList li{
+  float: left;
+}
+
+#navbarList li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+#navbarList li:not(#logo):hover{
+  background-color: rgb(44, 44, 44);
+}
+
+/*Home Styling*/
+
+.gameList{
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.gameList .gameListDiv{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+#game a{
+  text-decoration: none;
+}
+
+#game .gradeBox{
+  width: 45px;
+  height: 45px;
+}
+
+/*Game Info Styling*/
+
+#gameInfo{
+  text-align: center;
+}
+
+#gameInfo button{
+  background-color: rgb(0, 90, 226);
+  border: 0px;
+  height: 30px;
+}
+
+#gameInfo button:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: cyan;
+}
+
+#game:hover{
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Rate Page Styling*/
+#ratePage{
+  text-align: center;
+}
+
+#rateForm p{
+  font-size: 20px;
+}
+
+#rateForm button{
+  background-color: rgb(0, 90, 226);
+  border: 0px;
+  height: 30px;
+}
+
+#rateForm button:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: cyan;
+}
+
+/* Add Game Page Styling */
+#addGameForm{
+  text-align: center;
+}
+
+#addGameForm button{
+  position: relative;
+  background-color: rgb(0, 90, 226);
+  border: 0px;
+  height: 30px;
+  top: 10px;
+}
+
+#addGameForm button:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: cyan;
 }
