@@ -10,6 +10,6 @@ This Websites uses HTML, Vanilla CSS, and Javascript with React for Frontend and
 
 ## To be Implemented
 
-* Node.JS for Backedn Routing
+* Node.JS for Backend Routing
 * MySQL Server (since JSON Server has some limitations)
 * A Better Design
